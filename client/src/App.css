@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Join Page */
+.joinPage {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #128c7e;
+}
+
+.joinBox {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Layout */
+.mainContainer {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 25%;
+  background: #075e54;
+  color: white;
+  padding: 15px;
+}
+
+.userItem {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-top: 10px;
+  background: #128c7e;
+  border-radius: 5px;
+}
+
+/* Chat */
+.chatArea {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+}
+
+.chatHeader {
+  background: #ededed;
+  padding: 10px;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+}
+
+/* Messages */
+.chatMessages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+  background: #e5ddd5;
+}
+
+.messageRow {
+  display: flex;
+  margin: 5px;
+}
+
+.messageRow.own {
+  justify-content: flex-end;
+}
+
+.messageBubble {
+  max-width: 60%;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.messageRow.own .messageBubble {
+  background: #dcf8c6;
+}
+
+.sender {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.time {
+  font-size: 10px;
+  color: gray;
+  text-align: right;
+}
+
+/* Input */
+.chatInput {
+  display: flex;
+  padding: 10px;
+  background: #f0f0f0;
+}
+
+.chatInput input {
+  flex: 1;
+  padding: 10px;
+}
+
+.chatInput button {
+  padding: 10px;
+  background: #25d366;
+  border: none;
+  color: white;
+}
+
+/* Avatar */
+.avatar {
+  width: 35px;
+  height: 35px;
+  background: #25d366;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.avatar.small {
+  width: 30px;
+  height: 30px;
+}
